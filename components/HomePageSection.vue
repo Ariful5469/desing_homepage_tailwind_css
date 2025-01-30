@@ -18,9 +18,10 @@
           </div>
           <nav>
             <ul class="flex space-x-10 flex-wrap justify-center md:justify-start">
-              <li><a href="#" class="text-white hover:text-blue-500">Home</a></li>
-              <li><a href="#" class="text-white hover:text-blue-500">About Us</a></li>
-              <li><a href="#" class="text-white hover:text-blue-500">Compare</a></li>
+              <li><NuxtLink to="/" class="text-white hover:text-blue-500">Home</NuxtLink></li>
+
+    <li><NuxtLink to="/design_page" class="text-white hover:text-blue-500">Design</NuxtLink></li>
+    <li><NuxtLink to="/category" class="text-white hover:text-teal-400 border-2 border-white hover:border-teal-400 transition-all duration-300 px-3 py-1 rounded text-sm sm:text-sm md:text-base lg:text-lg">category</NuxtLink></li>
               <li><a href="#" class="text-white hover:text-blue-500">Community</a></li>
               <li><a href="#" class="text-white hover:text-blue-500">Contact</a></li>
             </ul>
@@ -528,57 +529,73 @@ View all
 
 <!-- row 7 -->
 
-<div class="container mx-auto p-4 mt-8"> <!-- Adjusted margin-top to make space below row 2 -->
-<div class="text-center text-4xl font-bold mb-6">
-  Latest News
-</div>
-
-<!-- Second Row: 3 Columns -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-  <!-- Product Card 1 -->
-  <div class="bg-white shadow-lg p-4 rounded-lg">
-    <div class="flex flex-col items-center">
-      <img src="@/assets/car1.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md">
-      <p class="mt-2 text-gray-700 text-center">Product Description Here</p>
-    </div>
-    <div class="flex justify-between items-center mt-4">
-      <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Buy Now</button>
-      <span class="text-lg font-semibold text-gray-800">$99.99</span>
-    </div>
+<div class="container mx-auto p-6 mt-12">
+  <!-- Section Title -->
+  <div class="text-center text-4xl font-bold text-gray-900 mb-8">
+    Latest News
   </div>
 
-  <!-- Product Card 2 -->
-  <div class="bg-white shadow-lg p-4 rounded-lg">
-    <div class="flex flex-col items-center">
-      <img src="@/assets/car2.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md">
-      <p class="mt-2 text-gray-700 text-center">Product Description Here</p>
-    </div>
-    <div class="flex justify-between items-center mt-4">
-      <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Buy Now</button>
-      <span class="text-lg font-semibold text-gray-800">$99.99</span>
-    </div>
-  </div>
+  <!-- News Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-  <!-- Product Card 3 -->
-  <div class="bg-white shadow-lg p-4 rounded-lg">
-    <div class="flex flex-col items-center">
-      <img src="@/assets/car3.jpg" alt="Product Image" class="w-full h-40 object-cover rounded-md">
-      <p class="mt-2 text-gray-700 text-center">Product Description Here</p>
+    <!-- News Card 1 -->
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+      <img src="@/assets/car1.jpg" alt="Car Image" class="w-full h-52 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Exciting New Model Launch</h3>
+        <p class="text-gray-600 text-sm">
+          Discover the latest innovation in automotive design. Cutting-edge features and performance.
+        </p>
+        <div class="flex justify-between items-center mt-5">
+          <button class="bg-blue-600 text-white px-5 py-2 rounded-lg transition hover:bg-blue-700">
+            Learn More
+          </button>
+          <span class="text-xl font-semibold text-gray-800">$99.99</span>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-between items-center mt-4">
-      <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Buy Now</button>
-      <span class="text-lg font-semibold text-gray-800">$99.99</span>
-    </div>
-  </div>
 
-</div>
+    <!-- News Card 2 -->
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+      <img src="@/assets/car2.jpg" alt="Car Image" class="w-full h-52 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Revolutionary Electric Car</h3>
+        <p class="text-gray-600 text-sm">
+          Explore the future of sustainability with our brand-new electric vehicle lineup.
+        </p>
+        <div class="flex justify-between items-center mt-5">
+          <button class="bg-blue-600 text-white px-5 py-2 rounded-lg transition hover:bg-blue-700">
+            Learn More
+          </button>
+          <span class="text-xl font-semibold text-gray-800">$99.99</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Card 3 -->
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+      <img src="@/assets/car3.jpg" alt="Car Image" class="w-full h-52 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Exclusive Sneak Peek</h3>
+        <p class="text-gray-600 text-sm">
+          Get a first look at the upcoming high-performance sports car in our latest series.
+        </p>
+        <div class="flex justify-between items-center mt-5">
+          <button class="bg-blue-600 text-white px-5 py-2 rounded-lg transition hover:bg-blue-700">
+            Learn More
+          </button>
+          <span class="text-xl font-semibold text-gray-800">$99.99</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 
 <!-- row 8 -->
 
-<div class="flex flex-col border border-black mb-4">
+<div class="mx-2 my-2 flex flex-col border border-black mb-4">
 
 <!-- Row 1: Logo in the middle -->
 <div class="flex justify-center items-center py-4">
@@ -586,46 +603,55 @@ View all
 </div>
 
 <!-- Row 2: 5 columns with small text -->
-<div class="grid grid-cols-5 gap-4 py-4">
+<div class="px-2 py-2 grid grid-cols-5 gap-4 py-4">
   <!-- Column 1 -->
   <div class="flex flex-col">
-    <div class="text-sm">Link 1</div>
-    <div class="text-sm">Link 2</div>
-    <div class="text-sm">Link 3</div>
-    <div class="text-sm">Link 4</div>
-    <div class="text-sm">Link 5</div>
-    <div class="text-sm">Link 6</div>
+    <h3 class="text-lg font-semibold mb-2">Company</h3>
+    <a href="#" class="text-sm hover:text-blue-500">About Us</a>
+    <a href="#" class="text-sm hover:text-blue-500">Careers</a>
+    <a href="#" class="text-sm hover:text-blue-500">Press</a>
+    <a href="#" class="text-sm hover:text-blue-500">Investors</a>
+    <a href="#" class="text-sm hover:text-blue-500">Newsroom</a>
+    <a href="#" class="text-sm hover:text-blue-500">Sustainability</a>
   </div>
-  <!-- Column 2 -->
+
+  <!-- Column 2: Support -->
   <div class="flex flex-col">
-    <div class="text-sm">Link 1</div>
-    <div class="text-sm">Link 2</div>
-    <div class="text-sm">Link 3</div>
-    <div class="text-sm">Link 4</div>
-    <div class="text-sm">Link 5</div>
+    <h3 class="text-lg font-semibold mb-2">Support</h3>
+    <a href="#" class="text-sm hover:text-blue-500">Help Center</a>
+    <a href="#" class="text-sm hover:text-blue-500">FAQs</a>
+    <a href="#" class="text-sm hover:text-blue-500">Contact Us</a>
+    <a href="#" class="text-sm hover:text-blue-500">Report an Issue</a>
+    <a href="#" class="text-sm hover:text-blue-500">Live Chat</a>
   </div>
-  <!-- Column 3 -->
+
+  <!-- Column 3: Services -->
   <div class="flex flex-col">
-    <div class="text-sm">Link 1</div>
-    <div class="text-sm">Link 2</div>
-    <div class="text-sm">Link 3</div>
-    <div class="text-sm">Link 4</div>
-    <div class="text-sm">Link 5</div>
-    <div class="text-sm">Link 6</div>
+    <h3 class="text-lg font-semibold mb-2">Services</h3>
+    <a href="#" class="text-sm hover:text-blue-500">Web Development</a>
+    <a href="#" class="text-sm hover:text-blue-500">Mobile Apps</a>
+    <a href="#" class="text-sm hover:text-blue-500">SEO & Marketing</a>
+    <a href="#" class="text-sm hover:text-blue-500">E-commerce</a>
+    <a href="#" class="text-sm hover:text-blue-500">Cloud Solutions</a>
+    <a href="#" class="text-sm hover:text-blue-500">Cybersecurity</a>
   </div>
-  <!-- Column 4 -->
+
+  <!-- Column 4: Legal -->
   <div class="flex flex-col">
-    <div class="text-sm">Link 1</div>
-    <div class="text-sm">Link 2</div>
-    <div class="text-sm">Link 3</div>
-    <div class="text-sm">Link 4</div>
+    <h3 class="text-lg font-semibold mb-2">Legal</h3>
+    <a href="#" class="text-sm hover:text-blue-500">Privacy Policy</a>
+    <a href="#" class="text-sm hover:text-blue-500">Terms of Service</a>
+    <a href="#" class="text-sm hover:text-blue-500">Cookie Policy</a>
+    <a href="#" class="text-sm hover:text-blue-500">Compliance</a>
   </div>
-  <!-- Column 5 -->
+
+  <!-- Column 5: Social Media -->
   <div class="flex flex-col">
-    <div class="text-sm">Link 1</div>
-    <div class="text-sm">Link 2</div>
-    <div class="text-sm">Link 3</div>
-    <div class="text-sm">Link 4</div>
+    <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
+    <a href="#" class="text-sm hover:text-blue-500">Facebook</a>
+    <a href="#" class="text-sm hover:text-blue-500">Twitter</a>
+    <a href="#" class="text-sm hover:text-blue-500">Instagram</a>
+    <a href="#" class="text-sm hover:text-blue-500">LinkedIn</a>
   </div>
 </div>
 
@@ -653,16 +679,13 @@ View all
 
 
 
-
-
-
-
-
   </div>
 </template>
 
-<script>
+<script >
+
 export default {
+
   data() {
     return {
       activeTab: 'buy',
