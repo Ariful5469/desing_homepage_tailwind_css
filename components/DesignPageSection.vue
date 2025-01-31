@@ -32,10 +32,10 @@
                     <NuxtLink to="/category" class="text-white hover:text-teal-400 border-2 border-white hover:border-teal-400 transition-all duration-300 px-3 py-1 rounded text-sm sm:text-sm md:text-base lg:text-lg">Category</NuxtLink>
                   </li>
                   <li>
-                    <a href="#" class="text-white hover:text-teal-400 border-2 border-white hover:border-teal-400 transition-all duration-300 px-3 py-1 rounded text-sm sm:text-sm md:text-base lg:text-lg">Community</a>
+                    <NuxtLink to="/category1" class="text-white hover:text-teal-400 border-2 border-white hover:border-teal-400 transition-all duration-300 px-3 py-1 rounded text-sm sm:text-sm md:text-base lg:text-lg">Category1</NuxtLink>
                   </li>
                   <li>
-                    <a href="#" class="text-white hover:text-teal-400 border-2 border-white hover:border-teal-400 transition-all duration-300 px-3 py-1 rounded text-sm sm:text-sm md:text-base lg:text-lg">Contact</a>
+                    <NuxtLink to="/contact" class="text-white hover:text-teal-400 border-2 border-white hover:border-teal-400 transition-all duration-300 px-3 py-1 rounded text-sm sm:text-sm md:text-base lg:text-lg">Community</NuxtLink>
                   </li>
                 </ul>
               </div>

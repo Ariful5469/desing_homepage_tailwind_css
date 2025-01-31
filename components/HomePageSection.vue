@@ -21,15 +21,16 @@
               <li><NuxtLink to="/" class="text-white hover:text-blue-500">Home</NuxtLink></li>
 
     <li><NuxtLink to="/design_page" class="text-white hover:text-blue-500">Design</NuxtLink></li>
-    <li><NuxtLink to="/category" class="text-white hover:text-teal-400 border-2 border-white hover:border-teal-400 transition-all duration-300 px-3 py-1 rounded text-sm sm:text-sm md:text-base lg:text-lg">category</NuxtLink></li>
-              <li><a href="#" class="text-white hover:text-blue-500">Community</a></li>
-              <li><a href="#" class="text-white hover:text-blue-500">Contact</a></li>
+    <li><NuxtLink to="/category" class="text-white hover:text-blue-500">Category</NuxtLink></li>
+    <li><NuxtLink to="/category1" class="text-white hover:text-blue-500">Category1</NuxtLink></li>
+    <li><NuxtLink to="/contact" class="text-white hover:text-blue-500">Community</NuxtLink></li>
             </ul>
           </nav>
           <div class="text-white flex items-center mt-4 md:mt-0">
-            <button @click="toggleLanguage" id="languageToggle">
-            {{ isEnglish ? "English" : "বাংলা" }}
-            </button>
+            <select id="languageToggle" class="bg-gray-700 text-white px-3 py-1 rounded cursor-pointer">
+  <option value="en">English</option>
+  <option value="bn">বাংলা</option>
+</select>
             <button class="ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign In</button>
             <button class="ml-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Sign Up</button>
           </div>
