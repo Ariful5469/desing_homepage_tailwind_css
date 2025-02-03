@@ -24,7 +24,7 @@
           </div>
 
           <!-- Center: Navigation Links -->
-          <ul class="flex justify-center space-x-8 text-zinc-400">
+          <ul class="flex justify-center space-x-4 text-zinc-400">
             <li>
               <NuxtLink
                 to="/"
@@ -58,6 +58,27 @@
                 to="/contact"
                 class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
                 >Community</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/today"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design_New</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/today1"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design_New_1</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/today2"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design_New_2</NuxtLink
               >
             </li>
           </ul>
