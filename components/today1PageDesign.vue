@@ -2,7 +2,7 @@
     <div class="flex flex-col mx-56 space-y-8 ">
 
 <div>
-      <!-- Center: Navigation Links -->
+     
           <ul class="flex justify-center space-x-4 text-zinc-400">
             <li>
               <NuxtLink
