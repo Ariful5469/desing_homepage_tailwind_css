@@ -1,5 +1,72 @@
 <template>
     <div class="flex flex-col mx-56 space-y-8 ">
+
+<div>
+      <!-- Center: Navigation Links -->
+          <ul class="flex justify-center space-x-4 text-zinc-400">
+            <li>
+              <NuxtLink
+                to="/"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design-01</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/design_page"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design-02</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/category"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design-03</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/category1"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design-04</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/contact"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design-05</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/today"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design-06</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/today1"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design-07</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/today2"
+                class="text-zinc-400 hover:text-neutral-50 transition-all duration-300 px-3 py-1 rounded text-xl"
+                >Design-08</NuxtLink
+              >
+            </li>
+          </ul>
+
+
+  </div>
+
+
+      
         <div>
     <vue-slick-carousel
       :dots="true"
